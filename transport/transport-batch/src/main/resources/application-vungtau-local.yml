@@ -1,0 +1,32 @@
+spring:
+  datasource:
+    url: "jdbc:mysql://103.141.140.12:3306/db_phatlocan?useLegacyDatetimeCode=false&serverTimezone=GMT%2B7&useUnicode=true&characterEncoding=utf8"
+    username: "sql_trung_chuyen_phatlocan"
+    password: "Sqltrungchuyen@123"
+    hikari:
+      connection-timeout: 30000 # 30 seconds
+      maximum-pool-size: 50
+      minimum-idle: 5
+      idle-timeout: 120000 # 2 minutes
+      max-lifetime: 1800000 # 30 minutes
+  quartz:
+    job-store-type: memory
+    properties:
+      org:
+        quartz:
+          scheduler:
+            instanceName: HAVAZ_TRANSPORT_BATCH
+          threadPool:
+            threadCount: 4
+            class: org.quartz.simpl.SimpleThreadPool
+
+# Havaz
+havaz:
+  sms:
+    hotlines: ""
+  quartz:
+    cron-expression:
+      monitor-transfer-ticket: "0 */5 * ? * * *"
+
+  url-monitor-transfer-ticket: "https://dev.admin.vungtau.havaz.vn/cron/"
+  url-erp-token: "664a5c3dddff20de79e38111025c01f3"

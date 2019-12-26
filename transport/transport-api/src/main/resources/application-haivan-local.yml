@@ -1,0 +1,72 @@
+spring:
+  datasource:
+    url: "jdbc:mysql://103.141.140.12:3306/db_haivan?useLegacyDatetimeCode=false&serverTimezone=GMT%2B7&useUnicode=true&characterEncoding=utf8"
+    username: "erp_hv"
+    password: "erp_hv@123"
+    hikari:
+      connection-timeout: 30000 # 30 seconds
+      maximum-pool-size: 50
+      minimum-idle: 5
+      idle-timeout: 120000 # 2 minutes
+      max-lifetime: 1800000 # 30 minutes
+  redis:
+    host: "3.1.31.233"
+    port: 6379
+    password: "HavzReeedisjYR8r25tyZ2011"
+
+# Havaz
+havaz:
+  security:
+    jwt-secret-key: "3f3a457ba89cf25023b523f7a63d4a8dc66ac09c28cd1fea4322808e62f9b73eb17778dfc5f3025e71318a963d76b24c8cdf990efbc05694f6b923e254b9b292"
+  mqtt:
+    url: "wss://emqx.havazdev.net:8087"
+    username: "mqtt"
+    password: "HazClients@123"
+    queue:
+      tracking-driver: "HaiVan_queue_driver"
+  redis:
+    key: "HAIVAN_KEY"
+    pubsub:
+      channel: "notify_to_manager_haivan_dev"
+  rabbitmq:
+    san:
+      host: "202.134.19.11"
+      port: 5672
+      username: "shavaz"
+      password: "HazavSA12B4nvE@2020"
+      virtual-host: "/"
+      on-send-message: true
+      exchange: "transport.tracking"
+      routing-key: "transport.tracking.updatepickuptime"
+      driver.arrived:
+        queue: "transport.tracking.driver"
+        routing-key: "transport.tracking.driver.has.arrived"
+      driver.confirmed:
+        queue: "transport.rabbitmq.driver.confirmed"
+        routing-key: "transport.rabbitmq.driver.confirmed.routing"
+    erp:
+      host: "103.141.140.12"
+      port: 5672
+      username: "erp"
+      password: "havaz@erp"
+      virtual-host: "haivan"
+      queue:
+        transfer-ticket: "1-queue-transshipments-ticket"
+        transfer-ticket-sync: "1-sync-queue-transshipments-ticket"
+    transport.transferticket:
+      exchange: "1-transshipments-ticket"
+      routing-key: "transport.transferticketransport-api/src/main/java/com/havaz/transport/api/repository/impl/TcLenhRepositoryCustomImpl.javat.update"
+      queue: "1-queue-update-ticket"
+  stomp:
+    topic: "/topic/noti"
+  firebase:
+    cmd.havaznow.topic: "/topics/cmdhavaz-now-" # firebase-appTopic
+  sms:
+    hotlines: ""
+  time-delay: 5
+  number-driver-limit: 2
+  number-minute-limit: 60000
+  url-erp: "https://test.api.haivanexpress.vn/api/transshipment/"
+  url-san: "http://dev.api.havaz.vn"
+  url-monitor-transfer-ticket: "https://test.haivanexpress.vn/cron/"
+  url-erp-token: "f6b48d6629e23e947fc4127e34a5f503"

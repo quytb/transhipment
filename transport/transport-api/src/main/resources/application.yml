@@ -1,0 +1,50 @@
+logging:
+  pattern.console: "%clr(%d{yyyy-MM-dd HH:mm:ss.SSS}){faint} %clr(%-5p) %clr(${PID:- }){magenta} %clr(---){faint} %clr([%15.15t]){faint} %clr(%-40.40logger{39}){cyan} %clr(: %L:){faint} %m%n%wEx"
+  config: "classpath:logback-spring.xml"
+  file.path: "${java.io.tmpdir}/log"
+  level:
+    org:
+      hibernate:
+        SQL: DEBUG
+      springframework:
+        web: INFO
+    com.havaz: DEBUG
+
+server:
+  port: 8080
+  servlet:
+    context-path: "/"
+  error:
+    whitelabel:
+      enabled: false
+  forward-headers-strategy: framework
+  tomcat:
+    remote_ip_header: x-forwarded-for
+    protocol_header: x-forwarded-proto
+
+spring:
+  http:
+    encoding:
+      enabled: true
+      charset: UTF-8
+      force: true
+      force-request: true
+      force-response: true
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    open-in-view: false
+    show-sql: true
+    hibernate:
+      ddl-auto: validate
+      naming:
+        physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+    database-platform: com.havaz.transport.dao.hibernate.dialect.MySQLHavazDialect
+    properties:
+      hibernate:
+        format_sql: true
+        dialect.storage_engine: innodb
+        dialect: com.havaz.transport.dao.hibernate.dialect.MySQLHavazDialect
+        current_session_context_class: org.springframework.orm.hibernate5.SpringSessionContext
+  profiles:
+    active: hason_haivan-local

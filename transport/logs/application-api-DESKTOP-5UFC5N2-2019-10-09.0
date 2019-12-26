@@ -1,0 +1,629 @@
+2019-10-09 11:48:52.031 INFO  15684 --- [restartedMain] com.havaz.transport.api.TransportApplication : 50: Starting TransportApplication on DESKTOP-5UFC5N2 with PID 15684 (D:\HavazTrungChuyen\transport\transport-api\out\production\classes started by havaz in D:\HavazTrungChuyen\transport)
+2019-10-09 11:48:52.036 DEBUG 15684 --- [restartedMain] com.havaz.transport.api.TransportApplication : 53: Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+2019-10-09 11:48:52.036 INFO  15684 --- [restartedMain] com.havaz.transport.api.TransportApplication : 652: The following profiles are active: vtdev
+2019-10-09 11:48:52.119 INFO  15684 --- [restartedMain] org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor : 225: Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-10-09 11:48:53.357 INFO  15684 --- [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate : 244: Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-10-09 11:48:53.357 INFO  15684 --- [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate : 126: Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-10-09 11:48:53.487 INFO  15684 --- [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate : 182: Finished Spring Data repository scanning in 125ms. Found 33 repository interfaces.
+2019-10-09 11:48:53.640 INFO  15684 --- [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate : 244: Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-10-09 11:48:53.641 INFO  15684 --- [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate : 126: Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-10-09 11:48:53.682 INFO  15684 --- [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport : 363: Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.havaz.transport.api.repository.AdminLv2UserRepository.
+2019-10-09 11:48:53.683 INFO  15684 --- [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport : 363: Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.havaz.transport.api.repository.BanVeVeRepository.
+2019-10-09 11:48:53.683 INFO  15684 --- [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport : 363: Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.havaz.transport.api.repository.BenXeEntityRepository.
+2019-10-09 11:48:53.683 INFO  15684 --- [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport : 363: Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.havaz.transport.api.repository.BvvRepository.
+2019-10-09 11:48:53.683 INFO  15684 --- [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport : 363: Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.havaz.transport.api.repository.ChiNhanhRepository.
+2019-10-09 11:48:53.684 INFO  15684 --- [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport : 363: Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.havaz.transport.api.repository.ConfigRepository.
+2019-10-09 11:48:53.684 INFO  15684 --- [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport : 363: Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.havaz.transport.api.repository.DieuDoTempRepository.
+2019-10-09 11:48:53.684 INFO  15684 --- [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport : 363: Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.havaz.transport.api.repository.LenhConfigRepository.
+2019-10-09 11:48:53.685 INFO  15684 --- [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport : 363: Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.havaz.transport.api.repository.MonitoringTcvRepository.
+2019-10-09 11:48:53.685 INFO  15684 --- [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport : 363: Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.havaz.transport.api.repository.NotTuyenRepository.
+2019-10-09 11:48:53.685 INFO  15684 --- [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport : 363: Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.havaz.transport.api.repository.TTTaiXeLogsRepository.
+2019-10-09 11:48:53.686 INFO  15684 --- [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport : 363: Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.havaz.transport.api.repository.TTTaiXeRepository.
+2019-10-09 11:48:53.687 INFO  15684 --- [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport : 363: Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.havaz.transport.api.repository.TcCaRepository.
+2019-10-09 11:48:53.687 INFO  15684 --- [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport : 363: Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.havaz.transport.api.repository.TcChamCongRepository.
+2019-10-09 11:48:53.688 INFO  15684 --- [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport : 363: Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.havaz.transport.api.repository.TcConfigRepository.
+2019-10-09 11:48:53.688 INFO  15684 --- [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport : 363: Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.havaz.transport.api.repository.TcCtvPriceByDistanceRepository.
+2019-10-09 11:48:53.688 INFO  15684 --- [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport : 363: Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.havaz.transport.api.repository.TcCtvPriceByStepRepository.
+2019-10-09 11:48:53.689 INFO  15684 --- [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport : 363: Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.havaz.transport.api.repository.TcCtvPriceRepository.
+2019-10-09 11:48:53.689 INFO  15684 --- [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport : 363: Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.havaz.transport.api.repository.TcCtvPriceStepRepository.
+2019-10-09 11:48:53.690 INFO  15684 --- [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport : 363: Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.havaz.transport.api.repository.TcLenhRepository.
+2019-10-09 11:48:53.690 INFO  15684 --- [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport : 363: Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.havaz.transport.api.repository.TcLichTrucRepository.
+2019-10-09 11:48:53.690 INFO  15684 --- [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport : 363: Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.havaz.transport.api.repository.TcMonitorTransferVeRepository.
+2019-10-09 11:48:53.690 INFO  15684 --- [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport : 363: Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.havaz.transport.api.repository.TcPartnerRepository.
+2019-10-09 11:48:53.691 INFO  15684 --- [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport : 363: Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.havaz.transport.api.repository.TcPriceGroupRepository.
+2019-10-09 11:48:53.691 INFO  15684 --- [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport : 363: Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.havaz.transport.api.repository.TcTripDetailRepository.
+2019-10-09 11:48:53.691 INFO  15684 --- [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport : 363: Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.havaz.transport.api.repository.TcVeRepository.
+2019-10-09 11:48:53.691 INFO  15684 --- [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport : 363: Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.havaz.transport.api.repository.TcVtcCtvRepository.
+2019-10-09 11:48:53.692 INFO  15684 --- [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport : 363: Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.havaz.transport.api.repository.TcVungTrungChuyenRepository.
+2019-10-09 11:48:53.692 INFO  15684 --- [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport : 363: Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.havaz.transport.api.repository.TcZzLogRepository.
+2019-10-09 11:48:53.692 INFO  15684 --- [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport : 363: Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.havaz.transport.api.repository.TuyenDiemDonTraRepository.
+2019-10-09 11:48:53.693 INFO  15684 --- [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport : 363: Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.havaz.transport.api.repository.TuyenRepository.
+2019-10-09 11:48:53.693 INFO  15684 --- [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport : 363: Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.havaz.transport.api.repository.VungTrungChuyenRepository.
+2019-10-09 11:48:53.693 INFO  15684 --- [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport : 363: Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.havaz.transport.api.repository.XeRepository.
+2019-10-09 11:48:53.693 INFO  15684 --- [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate : 182: Finished Spring Data repository scanning in 47ms. Found 0 repository interfaces.
+2019-10-09 11:48:54.031 INFO  15684 --- [restartedMain] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker : 330: Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$f909e2b6] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-10-09 11:48:54.066 INFO  15684 --- [restartedMain] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker : 330: Bean 'org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration' of type [org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration$$EnhancerBySpringCGLIB$$91b7aaf0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-10-09 11:48:54.070 INFO  15684 --- [restartedMain] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker : 330: Bean 'objectPostProcessor' of type [org.springframework.security.config.annotation.configuration.AutowireBeanFactoryObjectPostProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-10-09 11:48:54.072 INFO  15684 --- [restartedMain] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker : 330: Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@719eb54f' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-10-09 11:48:54.073 INFO  15684 --- [restartedMain] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker : 330: Bean 'org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration' of type [org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration$$EnhancerBySpringCGLIB$$b68c4da2] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-10-09 11:48:54.076 INFO  15684 --- [restartedMain] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker : 330: Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-10-09 11:48:54.435 INFO  15684 --- [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer : 90: Tomcat initialized with port(s): 8080 (http)
+2019-10-09 11:48:54.454 INFO  15684 --- [restartedMain] org.apache.catalina.core.StandardService : 173: Starting service [Tomcat]
+2019-10-09 11:48:54.454 INFO  15684 --- [restartedMain] org.apache.catalina.core.StandardEngine : 173: Starting Servlet engine: [Apache Tomcat/9.0.26]
+2019-10-09 11:48:54.460 INFO  15684 --- [restartedMain] org.apache.catalina.core.AprLifecycleListener : 173: An older version [1.2.21] of the APR based Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.23]
+2019-10-09 11:48:54.460 INFO  15684 --- [restartedMain] org.apache.catalina.core.AprLifecycleListener : 173: Loaded APR based Apache Tomcat Native library [1.2.21] using APR version [1.6.5].
+2019-10-09 11:48:54.460 INFO  15684 --- [restartedMain] org.apache.catalina.core.AprLifecycleListener : 173: APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2019-10-09 11:48:54.460 INFO  15684 --- [restartedMain] org.apache.catalina.core.AprLifecycleListener : 173: APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2019-10-09 11:48:54.464 INFO  15684 --- [restartedMain] org.apache.catalina.core.AprLifecycleListener : 173: OpenSSL successfully initialized [OpenSSL 1.1.1a  20 Nov 2018]
+2019-10-09 11:48:54.552 INFO  15684 --- [restartedMain] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] : 173: Initializing Spring embedded WebApplicationContext
+2019-10-09 11:48:54.553 DEBUG 15684 --- [restartedMain] org.springframework.web.context.ContextLoader : 278: Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+2019-10-09 11:48:54.553 INFO  15684 --- [restartedMain] org.springframework.web.context.ContextLoader : 284: Root WebApplicationContext: initialization completed in 2433 ms
+2019-10-09 11:48:54.724 WARN  15684 --- [restartedMain] com.zaxxer.hikari.HikariConfig : 901: HikariPool-1 - idleTimeout is close to or more than maxLifetime, disabling it.
+2019-10-09 11:48:54.735 WARN  15684 --- [restartedMain] io.sentry.dsn.Dsn : 89: *** Couldn't find a suitable DSN, Sentry operations will do nothing! See documentation: https://docs.sentry.io/clients/java/ ***
+2019-10-09 11:48:54.741 WARN  15684 --- [restartedMain] io.sentry.DefaultSentryClientFactory : 535: No 'stacktrace.app.packages' was configured, this option is highly recommended as it affects stacktrace grouping and display on Sentry. See documentation: https://docs.sentry.io/clients/java/config/#in-application-stack-frames
+2019-10-09 11:48:54.744 INFO  15684 --- [restartedMain] com.zaxxer.hikari.HikariDataSource : 95: HikariPool-1 - Starting...
+2019-10-09 11:48:55.198 INFO  15684 --- [restartedMain] com.zaxxer.hikari.HikariDataSource : 107: HikariPool-1 - Start completed.
+2019-10-09 11:48:55.237 INFO  15684 --- [restartedMain] org.hibernate.jpa.internal.util.LogHelper : 31: HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-10-09 11:48:55.318 INFO  15684 --- [restartedMain] org.hibernate.Version : 46: HHH000412: Hibernate Core {5.3.12.Final}
+2019-10-09 11:48:55.320 INFO  15684 --- [restartedMain] org.hibernate.cfg.Environment : 213: HHH000206: hibernate.properties not found
+2019-10-09 11:48:55.445 INFO  15684 --- [restartedMain] org.hibernate.spatial.integration.SpatialService : 42: HHH80000001: hibernate-spatial integration enabled : true
+2019-10-09 11:48:55.489 INFO  15684 --- [restartedMain] org.hibernate.annotations.common.Version : 49: HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-10-09 11:48:55.653 WARN  15684 --- [restartedMain] org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator : 132: HHH000342: Could not obtain connection to query metadata : Unable to resolve name [com.havaz.transport.api.config.MySQLHavazDialect] as strategy [org.hibernate.dialect.Dialect]
+2019-10-09 11:48:55.657 ERROR 15684 --- [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatStarter : 61: Error starting Tomcat context. Exception: org.springframework.beans.factory.BeanCreationException. Message: Error creating bean with name 'com.havaz.transport.api.filter.TransportFilter': Cannot create inner bean '(inner bean)#7b463d41' of type [com.havaz.transport.api.filter.TransportFilter] while setting bean property 'filter'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name '(inner bean)#7b463d41': Unsatisfied dependency expressed through field 'adminLv2UserService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'adminLv2UserServiceImpl': Unsatisfied dependency expressed through field 'adminLv2UserRepository'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'adminLv2UserRepository': Cannot create inner bean '(inner bean)#18072e9d' of type [org.springframework.orm.jpa.SharedEntityManagerCreator] while setting bean property 'entityManager'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name '(inner bean)#18072e9d': Cannot resolve reference to bean 'entityManagerFactory' while setting constructor argument; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is org.hibernate.service.spi.ServiceException: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment]
+2019-10-09 11:48:55.673 INFO  15684 --- [restartedMain] org.apache.catalina.core.StandardService : 173: Stopping service [Tomcat]
+2019-10-09 11:48:55.676 WARN  15684 --- [restartedMain] org.apache.catalina.loader.WebappClassLoaderBase : 173: The web application [ROOT] appears to have started a thread named [HikariPool-1 housekeeper] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:215)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2078)
+ java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1093)
+ java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:809)
+ java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1074)
+ java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1134)
+ java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+ java.lang.Thread.run(Thread.java:748)
+2019-10-09 11:48:55.677 WARN  15684 --- [restartedMain] org.apache.catalina.loader.WebappClassLoaderBase : 173: The web application [ROOT] appears to have started a thread named [HikariPool-1 connection adder] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.net.SocketInputStream.socketRead0(Native Method)
+ java.net.SocketInputStream.socketRead(SocketInputStream.java:116)
+ java.net.SocketInputStream.read(SocketInputStream.java:171)
+ java.net.SocketInputStream.read(SocketInputStream.java:141)
+ sun.security.ssl.InputRecord.readFully(InputRecord.java:465)
+ sun.security.ssl.InputRecord.read(InputRecord.java:503)
+ sun.security.ssl.SSLSocketImpl.readRecord(SSLSocketImpl.java:975)
+ sun.security.ssl.SSLSocketImpl.readDataRecord(SSLSocketImpl.java:933)
+ sun.security.ssl.AppInputStream.read(AppInputStream.java:105)
+ java.io.FilterInputStream.read(FilterInputStream.java:133)
+ com.mysql.cj.protocol.FullReadInputStream.readFully(FullReadInputStream.java:64)
+ com.mysql.cj.protocol.a.SimplePacketReader.readHeader(SimplePacketReader.java:63)
+ com.mysql.cj.protocol.a.SimplePacketReader.readHeader(SimplePacketReader.java:45)
+ com.mysql.cj.protocol.a.TimeTrackingPacketReader.readHeader(TimeTrackingPacketReader.java:52)
+ com.mysql.cj.protocol.a.TimeTrackingPacketReader.readHeader(TimeTrackingPacketReader.java:41)
+ com.mysql.cj.protocol.a.MultiPacketReader.readHeader(MultiPacketReader.java:54)
+ com.mysql.cj.protocol.a.MultiPacketReader.readHeader(MultiPacketReader.java:44)
+ com.mysql.cj.protocol.a.NativeProtocol.readMessage(NativeProtocol.java:535)
+ com.mysql.cj.protocol.a.NativeProtocol.checkErrorMessage(NativeProtocol.java:711)
+ com.mysql.cj.protocol.a.NativeProtocol.sendCommand(NativeProtocol.java:650)
+ com.mysql.cj.protocol.a.NativeProtocol.sendQueryPacket(NativeProtocol.java:949)
+ com.mysql.cj.protocol.a.NativeProtocol.sendQueryString(NativeProtocol.java:895)
+ com.mysql.cj.NativeSession.execSQL(NativeSession.java:1111)
+ com.mysql.cj.jdbc.ConnectionImpl.setupServerForTruncationChecks(ConnectionImpl.java:2286)
+ com.mysql.cj.jdbc.ConnectionImpl.initializePropsFromServer(ConnectionImpl.java:1324)
+ com.mysql.cj.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:958)
+ com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:817)
+ com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:447)
+ com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:237)
+ com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:199)
+ com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:112)
+ com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:118)
+ com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:341)
+ com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:193)
+ com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:428)
+ com.zaxxer.hikari.pool.HikariPool.access$300(HikariPool.java:70)
+ com.zaxxer.hikari.pool.HikariPool$PoolEntryCreator.call(HikariPool.java:612)
+ com.zaxxer.hikari.pool.HikariPool$PoolEntryCreator.call(HikariPool.java:598)
+ java.util.concurrent.FutureTask.run(FutureTask.java:266)
+ java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+ java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+ java.lang.Thread.run(Thread.java:748)
+2019-10-09 11:48:55.679 WARN  15684 --- [restartedMain] org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext : 557: Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Unable to start web server; nested exception is org.springframework.boot.web.server.WebServerException: Unable to start embedded Tomcat
+2019-10-09 11:48:55.680 INFO  15684 --- [restartedMain] com.zaxxer.hikari.HikariDataSource : 347: HikariPool-1 - Shutdown initiated...
+2019-10-09 11:48:55.681 INFO  15684 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool : 204: HikariPool-1 - Close initiated...
+2019-10-09 11:48:55.699 INFO  15684 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool : 238: HikariPool-1 - Closed.
+2019-10-09 11:48:55.700 INFO  15684 --- [restartedMain] com.zaxxer.hikari.HikariDataSource : 349: HikariPool-1 - Shutdown completed.
+2019-10-09 11:48:55.706 INFO  15684 --- [restartedMain] org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener : 136: 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2019-10-09 11:48:55.717 ERROR 15684 --- [restartedMain] org.springframework.boot.SpringApplication : 823: Application run failed
+
+org.springframework.context.ApplicationContextException: Unable to start web server; nested exception is org.springframework.boot.web.server.WebServerException: Unable to start embedded Tomcat
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.onRefresh(ServletWebServerApplicationContext.java:156)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:543)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:141)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:744)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:391)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:312)
+	at org.springframework.boot.builder.SpringApplicationBuilder.run(SpringApplicationBuilder.java:140)
+	at com.havaz.transport.api.TransportApplication.main(TransportApplication.java:29)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: org.springframework.boot.web.server.WebServerException: Unable to start embedded Tomcat
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize(TomcatWebServer.java:124)
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.<init>(TomcatWebServer.java:86)
+	at org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory.getTomcatWebServer(TomcatServletWebServerFactory.java:416)
+	at org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory.getWebServer(TomcatServletWebServerFactory.java:180)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.createWebServer(ServletWebServerApplicationContext.java:180)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.onRefresh(ServletWebServerApplicationContext.java:153)
+	... 12 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'com.havaz.transport.api.filter.TransportFilter': Cannot create inner bean '(inner bean)#7b463d41' of type [com.havaz.transport.api.filter.TransportFilter] while setting bean property 'filter'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name '(inner bean)#7b463d41': Unsatisfied dependency expressed through field 'adminLv2UserService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'adminLv2UserServiceImpl': Unsatisfied dependency expressed through field 'adminLv2UserRepository'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'adminLv2UserRepository': Cannot create inner bean '(inner bean)#18072e9d' of type [org.springframework.orm.jpa.SharedEntityManagerCreator] while setting bean property 'entityManager'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name '(inner bean)#18072e9d': Cannot resolve reference to bean 'entityManagerFactory' while setting constructor argument; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is org.hibernate.service.spi.ServiceException: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment]
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveInnerBean(BeanDefinitionValueResolver.java:361)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:131)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1681)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1433)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:592)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:204)
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.getOrderedBeansOfType(ServletContextInitializerBeans.java:211)
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.getOrderedBeansOfType(ServletContextInitializerBeans.java:202)
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.addServletContextInitializerBeans(ServletContextInitializerBeans.java:96)
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.<init>(ServletContextInitializerBeans.java:85)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.getServletContextInitializerBeans(ServletWebServerApplicationContext.java:253)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.selfInitialize(ServletWebServerApplicationContext.java:227)
+	at org.springframework.boot.web.embedded.tomcat.TomcatStarter.onStartup(TomcatStarter.java:53)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5135)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1384)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1374)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+	at java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:134)
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:909)
+	at org.apache.catalina.core.StandardHost.startInternal(StandardHost.java:841)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1384)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1374)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+	at java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:134)
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:909)
+	at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:262)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.StandardService.startInternal(StandardService.java:421)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:932)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.startup.Tomcat.start(Tomcat.java:459)
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize(TomcatWebServer.java:105)
+	... 17 common frames omitted
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name '(inner bean)#7b463d41': Unsatisfied dependency expressed through field 'adminLv2UserService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'adminLv2UserServiceImpl': Unsatisfied dependency expressed through field 'adminLv2UserRepository'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'adminLv2UserRepository': Cannot create inner bean '(inner bean)#18072e9d' of type [org.springframework.orm.jpa.SharedEntityManagerCreator] while setting bean property 'entityManager'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name '(inner bean)#18072e9d': Cannot resolve reference to bean 'entityManagerFactory' while setting constructor argument; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is org.hibernate.service.spi.ServiceException: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:598)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:90)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:376)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1411)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:592)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveInnerBean(BeanDefinitionValueResolver.java:346)
+	... 57 common frames omitted
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'adminLv2UserServiceImpl': Unsatisfied dependency expressed through field 'adminLv2UserRepository'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'adminLv2UserRepository': Cannot create inner bean '(inner bean)#18072e9d' of type [org.springframework.orm.jpa.SharedEntityManagerCreator] while setting bean property 'entityManager'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name '(inner bean)#18072e9d': Cannot resolve reference to bean 'entityManagerFactory' while setting constructor argument; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is org.hibernate.service.spi.ServiceException: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:598)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:90)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:376)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1411)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:592)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:277)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1255)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1175)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:595)
+	... 63 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'adminLv2UserRepository': Cannot create inner bean '(inner bean)#18072e9d' of type [org.springframework.orm.jpa.SharedEntityManagerCreator] while setting bean property 'entityManager'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name '(inner bean)#18072e9d': Cannot resolve reference to bean 'entityManagerFactory' while setting constructor argument; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is org.hibernate.service.spi.ServiceException: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment]
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveInnerBean(BeanDefinitionValueResolver.java:361)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:131)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1681)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1433)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:592)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:277)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1255)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1175)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:595)
+	... 76 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name '(inner bean)#18072e9d': Cannot resolve reference to bean 'entityManagerFactory' while setting constructor argument; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is org.hibernate.service.spi.ServiceException: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment]
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:314)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:110)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveConstructorArguments(ConstructorResolver.java:662)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:479)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1321)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1160)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:555)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveInnerBean(BeanDefinitionValueResolver.java:346)
+	... 89 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is org.hibernate.service.spi.ServiceException: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1778)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:593)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:303)
+	... 97 common frames omitted
+Caused by: org.hibernate.service.spi.ServiceException: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:275)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:237)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:214)
+	at org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory.injectServices(DefaultIdentifierGeneratorFactory.java:152)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.injectDependencies(AbstractServiceRegistryImpl.java:286)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:243)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:214)
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.<init>(InFlightMetadataCollectorImpl.java:179)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:119)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:904)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:935)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:58)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:391)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:378)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1837)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1774)
+	... 104 common frames omitted
+Caused by: org.hibernate.boot.registry.selector.spi.StrategySelectionException: Unable to resolve name [com.havaz.transport.api.config.MySQLHavazDialect] as strategy [org.hibernate.dialect.Dialect]
+	at org.hibernate.boot.registry.selector.internal.StrategySelectorImpl.selectStrategyImplementor(StrategySelectorImpl.java:133)
+	at org.hibernate.boot.registry.selector.internal.StrategySelectorImpl.resolveStrategy(StrategySelectorImpl.java:212)
+	at org.hibernate.boot.registry.selector.internal.StrategySelectorImpl.resolveDefaultableStrategy(StrategySelectorImpl.java:160)
+	at org.hibernate.boot.registry.selector.internal.StrategySelectorImpl.resolveDefaultableStrategy(StrategySelectorImpl.java:147)
+	at org.hibernate.boot.registry.selector.internal.StrategySelectorImpl.resolveStrategy(StrategySelectorImpl.java:141)
+	at org.hibernate.engine.jdbc.dialect.internal.DialectFactoryImpl.constructDialect(DialectFactoryImpl.java:74)
+	at org.hibernate.engine.jdbc.dialect.internal.DialectFactoryImpl.buildDialect(DialectFactoryImpl.java:51)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:137)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:35)
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:94)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:263)
+	... 121 common frames omitted
+Caused by: org.hibernate.boot.registry.classloading.spi.ClassLoadingException: Unable to load class [com.havaz.transport.api.config.MySQLHavazDialect]
+	at org.hibernate.boot.registry.classloading.internal.ClassLoaderServiceImpl.classForName(ClassLoaderServiceImpl.java:134)
+	at org.hibernate.boot.registry.selector.internal.StrategySelectorImpl.selectStrategyImplementor(StrategySelectorImpl.java:129)
+	... 131 common frames omitted
+Caused by: java.lang.ClassNotFoundException: Could not load requested class : com.havaz.transport.api.config.MySQLHavazDialect
+	at org.hibernate.boot.registry.classloading.internal.AggregatedClassLoader.findClass(AggregatedClassLoader.java:210)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:348)
+	at org.hibernate.boot.registry.classloading.internal.ClassLoaderServiceImpl.classForName(ClassLoaderServiceImpl.java:131)
+	... 132 common frames omitted
+
+2019-10-09 11:50:35.147 INFO  17920 --- [restartedMain] com.havaz.transport.api.TransportApplication : 50: Starting TransportApplication on DESKTOP-5UFC5N2 with PID 17920 (D:\HavazTrungChuyen\transport\transport-api\out\production\classes started by havaz in D:\HavazTrungChuyen\transport)
+2019-10-09 11:50:35.150 DEBUG 17920 --- [restartedMain] com.havaz.transport.api.TransportApplication : 53: Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+2019-10-09 11:50:35.150 INFO  17920 --- [restartedMain] com.havaz.transport.api.TransportApplication : 652: The following profiles are active: vtdev
+2019-10-09 11:50:35.196 INFO  17920 --- [restartedMain] org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor : 225: Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-10-09 11:50:36.356 INFO  17920 --- [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate : 244: Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-10-09 11:50:36.356 INFO  17920 --- [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate : 126: Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-10-09 11:50:36.518 INFO  17920 --- [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate : 182: Finished Spring Data repository scanning in 155ms. Found 33 repository interfaces.
+2019-10-09 11:50:36.706 INFO  17920 --- [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate : 244: Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-10-09 11:50:36.707 INFO  17920 --- [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate : 126: Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-10-09 11:50:36.754 INFO  17920 --- [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport : 363: Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.havaz.transport.api.repository.AdminLv2UserRepository.
+2019-10-09 11:50:36.755 INFO  17920 --- [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport : 363: Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.havaz.transport.api.repository.BanVeVeRepository.
+2019-10-09 11:50:36.755 INFO  17920 --- [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport : 363: Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.havaz.transport.api.repository.BenXeEntityRepository.
+2019-10-09 11:50:36.755 INFO  17920 --- [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport : 363: Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.havaz.transport.api.repository.BvvRepository.
+2019-10-09 11:50:36.755 INFO  17920 --- [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport : 363: Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.havaz.transport.api.repository.ChiNhanhRepository.
+2019-10-09 11:50:36.756 INFO  17920 --- [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport : 363: Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.havaz.transport.api.repository.ConfigRepository.
+2019-10-09 11:50:36.756 INFO  17920 --- [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport : 363: Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.havaz.transport.api.repository.DieuDoTempRepository.
+2019-10-09 11:50:36.756 INFO  17920 --- [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport : 363: Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.havaz.transport.api.repository.LenhConfigRepository.
+2019-10-09 11:50:36.757 INFO  17920 --- [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport : 363: Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.havaz.transport.api.repository.MonitoringTcvRepository.
+2019-10-09 11:50:36.757 INFO  17920 --- [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport : 363: Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.havaz.transport.api.repository.NotTuyenRepository.
+2019-10-09 11:50:36.757 INFO  17920 --- [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport : 363: Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.havaz.transport.api.repository.TTTaiXeLogsRepository.
+2019-10-09 11:50:36.758 INFO  17920 --- [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport : 363: Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.havaz.transport.api.repository.TTTaiXeRepository.
+2019-10-09 11:50:36.759 INFO  17920 --- [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport : 363: Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.havaz.transport.api.repository.TcCaRepository.
+2019-10-09 11:50:36.759 INFO  17920 --- [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport : 363: Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.havaz.transport.api.repository.TcChamCongRepository.
+2019-10-09 11:50:36.759 INFO  17920 --- [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport : 363: Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.havaz.transport.api.repository.TcConfigRepository.
+2019-10-09 11:50:36.759 INFO  17920 --- [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport : 363: Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.havaz.transport.api.repository.TcCtvPriceByDistanceRepository.
+2019-10-09 11:50:36.760 INFO  17920 --- [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport : 363: Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.havaz.transport.api.repository.TcCtvPriceByStepRepository.
+2019-10-09 11:50:36.760 INFO  17920 --- [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport : 363: Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.havaz.transport.api.repository.TcCtvPriceRepository.
+2019-10-09 11:50:36.761 INFO  17920 --- [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport : 363: Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.havaz.transport.api.repository.TcCtvPriceStepRepository.
+2019-10-09 11:50:36.762 INFO  17920 --- [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport : 363: Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.havaz.transport.api.repository.TcLenhRepository.
+2019-10-09 11:50:36.762 INFO  17920 --- [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport : 363: Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.havaz.transport.api.repository.TcLichTrucRepository.
+2019-10-09 11:50:36.762 INFO  17920 --- [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport : 363: Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.havaz.transport.api.repository.TcMonitorTransferVeRepository.
+2019-10-09 11:50:36.762 INFO  17920 --- [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport : 363: Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.havaz.transport.api.repository.TcPartnerRepository.
+2019-10-09 11:50:36.763 INFO  17920 --- [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport : 363: Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.havaz.transport.api.repository.TcPriceGroupRepository.
+2019-10-09 11:50:36.763 INFO  17920 --- [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport : 363: Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.havaz.transport.api.repository.TcTripDetailRepository.
+2019-10-09 11:50:36.763 INFO  17920 --- [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport : 363: Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.havaz.transport.api.repository.TcVeRepository.
+2019-10-09 11:50:36.764 INFO  17920 --- [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport : 363: Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.havaz.transport.api.repository.TcVtcCtvRepository.
+2019-10-09 11:50:36.764 INFO  17920 --- [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport : 363: Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.havaz.transport.api.repository.TcVungTrungChuyenRepository.
+2019-10-09 11:50:36.764 INFO  17920 --- [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport : 363: Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.havaz.transport.api.repository.TcZzLogRepository.
+2019-10-09 11:50:36.765 INFO  17920 --- [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport : 363: Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.havaz.transport.api.repository.TuyenDiemDonTraRepository.
+2019-10-09 11:50:36.765 INFO  17920 --- [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport : 363: Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.havaz.transport.api.repository.TuyenRepository.
+2019-10-09 11:50:36.765 INFO  17920 --- [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport : 363: Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.havaz.transport.api.repository.VungTrungChuyenRepository.
+2019-10-09 11:50:36.765 INFO  17920 --- [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport : 363: Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.havaz.transport.api.repository.XeRepository.
+2019-10-09 11:50:36.766 INFO  17920 --- [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate : 182: Finished Spring Data repository scanning in 51ms. Found 0 repository interfaces.
+2019-10-09 11:50:37.183 INFO  17920 --- [restartedMain] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker : 330: Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$51ca4d49] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-10-09 11:50:37.221 INFO  17920 --- [restartedMain] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker : 330: Bean 'org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration' of type [org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration$$EnhancerBySpringCGLIB$$ea781583] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-10-09 11:50:37.226 INFO  17920 --- [restartedMain] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker : 330: Bean 'objectPostProcessor' of type [org.springframework.security.config.annotation.configuration.AutowireBeanFactoryObjectPostProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-10-09 11:50:37.227 INFO  17920 --- [restartedMain] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker : 330: Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@1db80427' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-10-09 11:50:37.231 INFO  17920 --- [restartedMain] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker : 330: Bean 'org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration' of type [org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration$$EnhancerBySpringCGLIB$$f4cb835] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-10-09 11:50:37.235 INFO  17920 --- [restartedMain] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker : 330: Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-10-09 11:50:37.608 INFO  17920 --- [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer : 90: Tomcat initialized with port(s): 8080 (http)
+2019-10-09 11:50:37.627 INFO  17920 --- [restartedMain] org.apache.catalina.core.StandardService : 173: Starting service [Tomcat]
+2019-10-09 11:50:37.627 INFO  17920 --- [restartedMain] org.apache.catalina.core.StandardEngine : 173: Starting Servlet engine: [Apache Tomcat/9.0.26]
+2019-10-09 11:50:37.633 INFO  17920 --- [restartedMain] org.apache.catalina.core.AprLifecycleListener : 173: An older version [1.2.21] of the APR based Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.23]
+2019-10-09 11:50:37.633 INFO  17920 --- [restartedMain] org.apache.catalina.core.AprLifecycleListener : 173: Loaded APR based Apache Tomcat Native library [1.2.21] using APR version [1.6.5].
+2019-10-09 11:50:37.634 INFO  17920 --- [restartedMain] org.apache.catalina.core.AprLifecycleListener : 173: APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2019-10-09 11:50:37.634 INFO  17920 --- [restartedMain] org.apache.catalina.core.AprLifecycleListener : 173: APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2019-10-09 11:50:37.636 INFO  17920 --- [restartedMain] org.apache.catalina.core.AprLifecycleListener : 173: OpenSSL successfully initialized [OpenSSL 1.1.1a  20 Nov 2018]
+2019-10-09 11:50:37.729 INFO  17920 --- [restartedMain] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] : 173: Initializing Spring embedded WebApplicationContext
+2019-10-09 11:50:37.729 DEBUG 17920 --- [restartedMain] org.springframework.web.context.ContextLoader : 278: Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+2019-10-09 11:50:37.729 INFO  17920 --- [restartedMain] org.springframework.web.context.ContextLoader : 284: Root WebApplicationContext: initialization completed in 2533 ms
+2019-10-09 11:50:37.920 WARN  17920 --- [restartedMain] com.zaxxer.hikari.HikariConfig : 901: HikariPool-1 - idleTimeout is close to or more than maxLifetime, disabling it.
+2019-10-09 11:50:37.934 WARN  17920 --- [restartedMain] io.sentry.dsn.Dsn : 89: *** Couldn't find a suitable DSN, Sentry operations will do nothing! See documentation: https://docs.sentry.io/clients/java/ ***
+2019-10-09 11:50:37.941 WARN  17920 --- [restartedMain] io.sentry.DefaultSentryClientFactory : 535: No 'stacktrace.app.packages' was configured, this option is highly recommended as it affects stacktrace grouping and display on Sentry. See documentation: https://docs.sentry.io/clients/java/config/#in-application-stack-frames
+2019-10-09 11:50:37.944 INFO  17920 --- [restartedMain] com.zaxxer.hikari.HikariDataSource : 95: HikariPool-1 - Starting...
+2019-10-09 11:50:38.369 INFO  17920 --- [restartedMain] com.zaxxer.hikari.HikariDataSource : 107: HikariPool-1 - Start completed.
+2019-10-09 11:50:38.408 INFO  17920 --- [restartedMain] org.hibernate.jpa.internal.util.LogHelper : 31: HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-10-09 11:50:38.475 INFO  17920 --- [restartedMain] org.hibernate.Version : 46: HHH000412: Hibernate Core {5.3.12.Final}
+2019-10-09 11:50:38.478 INFO  17920 --- [restartedMain] org.hibernate.cfg.Environment : 213: HHH000206: hibernate.properties not found
+2019-10-09 11:50:38.596 INFO  17920 --- [restartedMain] org.hibernate.spatial.integration.SpatialService : 42: HHH80000001: hibernate-spatial integration enabled : true
+2019-10-09 11:50:38.636 INFO  17920 --- [restartedMain] org.hibernate.annotations.common.Version : 49: HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-10-09 11:50:38.808 WARN  17920 --- [restartedMain] org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator : 132: HHH000342: Could not obtain connection to query metadata : Unable to resolve name [com.havaz.transport.api.config.MySQLHavazDialect] as strategy [org.hibernate.dialect.Dialect]
+2019-10-09 11:50:38.812 ERROR 17920 --- [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatStarter : 61: Error starting Tomcat context. Exception: org.springframework.beans.factory.BeanCreationException. Message: Error creating bean with name 'com.havaz.transport.api.filter.TransportFilter': Cannot create inner bean '(inner bean)#3b529f38' of type [com.havaz.transport.api.filter.TransportFilter] while setting bean property 'filter'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name '(inner bean)#3b529f38': Unsatisfied dependency expressed through field 'adminLv2UserService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'adminLv2UserServiceImpl': Unsatisfied dependency expressed through field 'adminLv2UserRepository'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'adminLv2UserRepository': Cannot create inner bean '(inner bean)#18ba495c' of type [org.springframework.orm.jpa.SharedEntityManagerCreator] while setting bean property 'entityManager'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name '(inner bean)#18ba495c': Cannot resolve reference to bean 'entityManagerFactory' while setting constructor argument; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is org.hibernate.service.spi.ServiceException: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment]
+2019-10-09 11:50:38.845 INFO  17920 --- [restartedMain] org.apache.catalina.core.StandardService : 173: Stopping service [Tomcat]
+2019-10-09 11:50:38.849 WARN  17920 --- [restartedMain] org.apache.catalina.loader.WebappClassLoaderBase : 173: The web application [ROOT] appears to have started a thread named [HikariPool-1 housekeeper] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:215)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2078)
+ java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1093)
+ java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:809)
+ java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1074)
+ java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1134)
+ java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+ java.lang.Thread.run(Thread.java:748)
+2019-10-09 11:50:38.849 WARN  17920 --- [restartedMain] org.apache.catalina.loader.WebappClassLoaderBase : 173: The web application [ROOT] appears to have started a thread named [HikariPool-1 connection adder] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.math.BigInteger.implMulAdd(BigInteger.java:3047)
+ java.math.BigInteger.mulAdd(BigInteger.java:3018)
+ java.math.BigInteger.montReduce(BigInteger.java:2967)
+ java.math.BigInteger.implMontgomerySquare(BigInteger.java:2714)
+ java.math.BigInteger.montgomerySquare(BigInteger.java:2672)
+ java.math.BigInteger.oddModPow(BigInteger.java:2940)
+ java.math.BigInteger.modPow(BigInteger.java:2603)
+ com.sun.crypto.provider.DHKeyAgreement.engineGenerateSecret(DHKeyAgreement.java:330)
+ com.sun.crypto.provider.DHKeyAgreement.engineGenerateSecret(DHKeyAgreement.java:259)
+ com.sun.crypto.provider.DHKeyAgreement.engineGenerateSecret(DHKeyAgreement.java:391)
+ javax.crypto.KeyAgreement.generateSecret(KeyAgreement.java:648)
+ sun.security.ssl.DHCrypt.getAgreedSecret(DHCrypt.java:217)
+ sun.security.ssl.ClientHandshaker.serverHelloDone(ClientHandshaker.java:1117)
+ sun.security.ssl.ClientHandshaker.processMessage(ClientHandshaker.java:369)
+ sun.security.ssl.Handshaker.processLoop(Handshaker.java:1037)
+ sun.security.ssl.Handshaker.process_record(Handshaker.java:965)
+ sun.security.ssl.SSLSocketImpl.readRecord(SSLSocketImpl.java:1064)
+ sun.security.ssl.SSLSocketImpl.performInitialHandshake(SSLSocketImpl.java:1367)
+ sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:1395)
+ sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:1379)
+ com.mysql.cj.protocol.ExportControlled.performTlsHandshake(ExportControlled.java:316)
+ com.mysql.cj.protocol.StandardSocketFactory.performTlsHandshake(StandardSocketFactory.java:188)
+ com.mysql.cj.protocol.a.NativeSocketConnection.performTlsHandshake(NativeSocketConnection.java:99)
+ com.mysql.cj.protocol.a.NativeProtocol.negotiateSSLConnection(NativeProtocol.java:331)
+ com.mysql.cj.protocol.a.NativeAuthenticationProvider.negotiateSSLConnection(NativeAuthenticationProvider.java:777)
+ com.mysql.cj.protocol.a.NativeAuthenticationProvider.proceedHandshakeWithPluggableAuthentication(NativeAuthenticationProvider.java:486)
+ com.mysql.cj.protocol.a.NativeAuthenticationProvider.connect(NativeAuthenticationProvider.java:202)
+ com.mysql.cj.protocol.a.NativeProtocol.connect(NativeProtocol.java:1348)
+ com.mysql.cj.NativeSession.connect(NativeSession.java:163)
+ com.mysql.cj.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:947)
+ com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:817)
+ com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:447)
+ com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:237)
+ com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:199)
+ com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:112)
+ com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:118)
+ com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:341)
+ com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:193)
+ com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:428)
+ com.zaxxer.hikari.pool.HikariPool.access$300(HikariPool.java:70)
+ com.zaxxer.hikari.pool.HikariPool$PoolEntryCreator.call(HikariPool.java:612)
+ com.zaxxer.hikari.pool.HikariPool$PoolEntryCreator.call(HikariPool.java:598)
+ java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:266)
+ java.util.concurrent.FutureTask.run(FutureTask.java)
+ java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+ java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+ java.lang.Thread.run(Thread.java:748)
+2019-10-09 11:50:38.852 WARN  17920 --- [restartedMain] org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext : 557: Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Unable to start web server; nested exception is org.springframework.boot.web.server.WebServerException: Unable to start embedded Tomcat
+2019-10-09 11:50:38.853 INFO  17920 --- [restartedMain] com.zaxxer.hikari.HikariDataSource : 347: HikariPool-1 - Shutdown initiated...
+2019-10-09 11:50:38.853 INFO  17920 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool : 204: HikariPool-1 - Close initiated...
+2019-10-09 11:50:38.896 INFO  17920 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool : 238: HikariPool-1 - Closed.
+2019-10-09 11:50:38.896 INFO  17920 --- [restartedMain] com.zaxxer.hikari.HikariDataSource : 349: HikariPool-1 - Shutdown completed.
+2019-10-09 11:50:38.903 INFO  17920 --- [restartedMain] org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener : 136: 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2019-10-09 11:50:38.912 ERROR 17920 --- [restartedMain] org.springframework.boot.SpringApplication : 823: Application run failed
+
+org.springframework.context.ApplicationContextException: Unable to start web server; nested exception is org.springframework.boot.web.server.WebServerException: Unable to start embedded Tomcat
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.onRefresh(ServletWebServerApplicationContext.java:156)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:543)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:141)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:744)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:391)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:312)
+	at org.springframework.boot.builder.SpringApplicationBuilder.run(SpringApplicationBuilder.java:140)
+	at com.havaz.transport.api.TransportApplication.main(TransportApplication.java:29)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: org.springframework.boot.web.server.WebServerException: Unable to start embedded Tomcat
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize(TomcatWebServer.java:124)
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.<init>(TomcatWebServer.java:86)
+	at org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory.getTomcatWebServer(TomcatServletWebServerFactory.java:416)
+	at org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory.getWebServer(TomcatServletWebServerFactory.java:180)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.createWebServer(ServletWebServerApplicationContext.java:180)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.onRefresh(ServletWebServerApplicationContext.java:153)
+	... 12 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'com.havaz.transport.api.filter.TransportFilter': Cannot create inner bean '(inner bean)#3b529f38' of type [com.havaz.transport.api.filter.TransportFilter] while setting bean property 'filter'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name '(inner bean)#3b529f38': Unsatisfied dependency expressed through field 'adminLv2UserService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'adminLv2UserServiceImpl': Unsatisfied dependency expressed through field 'adminLv2UserRepository'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'adminLv2UserRepository': Cannot create inner bean '(inner bean)#18ba495c' of type [org.springframework.orm.jpa.SharedEntityManagerCreator] while setting bean property 'entityManager'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name '(inner bean)#18ba495c': Cannot resolve reference to bean 'entityManagerFactory' while setting constructor argument; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is org.hibernate.service.spi.ServiceException: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment]
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveInnerBean(BeanDefinitionValueResolver.java:361)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:131)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1681)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1433)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:592)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:204)
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.getOrderedBeansOfType(ServletContextInitializerBeans.java:211)
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.getOrderedBeansOfType(ServletContextInitializerBeans.java:202)
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.addServletContextInitializerBeans(ServletContextInitializerBeans.java:96)
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.<init>(ServletContextInitializerBeans.java:85)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.getServletContextInitializerBeans(ServletWebServerApplicationContext.java:253)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.selfInitialize(ServletWebServerApplicationContext.java:227)
+	at org.springframework.boot.web.embedded.tomcat.TomcatStarter.onStartup(TomcatStarter.java:53)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5135)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1384)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1374)
+	at java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:266)
+	at java.util.concurrent.FutureTask.run(FutureTask.java)
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+	at java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:134)
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:909)
+	at org.apache.catalina.core.StandardHost.startInternal(StandardHost.java:841)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1384)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1374)
+	at java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:266)
+	at java.util.concurrent.FutureTask.run(FutureTask.java)
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+	at java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:134)
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:909)
+	at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:262)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.StandardService.startInternal(StandardService.java:421)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:932)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.startup.Tomcat.start(Tomcat.java:459)
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize(TomcatWebServer.java:105)
+	... 17 common frames omitted
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name '(inner bean)#3b529f38': Unsatisfied dependency expressed through field 'adminLv2UserService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'adminLv2UserServiceImpl': Unsatisfied dependency expressed through field 'adminLv2UserRepository'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'adminLv2UserRepository': Cannot create inner bean '(inner bean)#18ba495c' of type [org.springframework.orm.jpa.SharedEntityManagerCreator] while setting bean property 'entityManager'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name '(inner bean)#18ba495c': Cannot resolve reference to bean 'entityManagerFactory' while setting constructor argument; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is org.hibernate.service.spi.ServiceException: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:598)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:90)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:376)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1411)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:592)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveInnerBean(BeanDefinitionValueResolver.java:346)
+	... 59 common frames omitted
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'adminLv2UserServiceImpl': Unsatisfied dependency expressed through field 'adminLv2UserRepository'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'adminLv2UserRepository': Cannot create inner bean '(inner bean)#18ba495c' of type [org.springframework.orm.jpa.SharedEntityManagerCreator] while setting bean property 'entityManager'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name '(inner bean)#18ba495c': Cannot resolve reference to bean 'entityManagerFactory' while setting constructor argument; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is org.hibernate.service.spi.ServiceException: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:598)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:90)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:376)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1411)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:592)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:277)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1255)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1175)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:595)
+	... 65 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'adminLv2UserRepository': Cannot create inner bean '(inner bean)#18ba495c' of type [org.springframework.orm.jpa.SharedEntityManagerCreator] while setting bean property 'entityManager'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name '(inner bean)#18ba495c': Cannot resolve reference to bean 'entityManagerFactory' while setting constructor argument; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is org.hibernate.service.spi.ServiceException: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment]
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveInnerBean(BeanDefinitionValueResolver.java:361)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:131)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1681)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1433)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:592)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:277)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1255)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1175)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:595)
+	... 78 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name '(inner bean)#18ba495c': Cannot resolve reference to bean 'entityManagerFactory' while setting constructor argument; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is org.hibernate.service.spi.ServiceException: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment]
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:314)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:110)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveConstructorArguments(ConstructorResolver.java:662)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:479)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1321)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1160)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:555)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveInnerBean(BeanDefinitionValueResolver.java:346)
+	... 91 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is org.hibernate.service.spi.ServiceException: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1778)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:593)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:303)
+	... 99 common frames omitted
+Caused by: org.hibernate.service.spi.ServiceException: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:275)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:237)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:214)
+	at org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory.injectServices(DefaultIdentifierGeneratorFactory.java:152)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.injectDependencies(AbstractServiceRegistryImpl.java:286)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:243)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:214)
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.<init>(InFlightMetadataCollectorImpl.java:179)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:119)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:904)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:935)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:58)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:391)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:378)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1837)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1774)
+	... 106 common frames omitted
+Caused by: org.hibernate.boot.registry.selector.spi.StrategySelectionException: Unable to resolve name [com.havaz.transport.api.config.MySQLHavazDialect] as strategy [org.hibernate.dialect.Dialect]
+	at org.hibernate.boot.registry.selector.internal.StrategySelectorImpl.selectStrategyImplementor(StrategySelectorImpl.java:133)
+	at org.hibernate.boot.registry.selector.internal.StrategySelectorImpl.resolveStrategy(StrategySelectorImpl.java:212)
+	at org.hibernate.boot.registry.selector.internal.StrategySelectorImpl.resolveDefaultableStrategy(StrategySelectorImpl.java:160)
+	at org.hibernate.boot.registry.selector.internal.StrategySelectorImpl.resolveDefaultableStrategy(StrategySelectorImpl.java:147)
+	at org.hibernate.boot.registry.selector.internal.StrategySelectorImpl.resolveStrategy(StrategySelectorImpl.java:141)
+	at org.hibernate.engine.jdbc.dialect.internal.DialectFactoryImpl.constructDialect(DialectFactoryImpl.java:74)
+	at org.hibernate.engine.jdbc.dialect.internal.DialectFactoryImpl.buildDialect(DialectFactoryImpl.java:51)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:137)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:35)
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:94)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:263)
+	... 123 common frames omitted
+Caused by: org.hibernate.boot.registry.classloading.spi.ClassLoadingException: Unable to load class [com.havaz.transport.api.config.MySQLHavazDialect]
+	at org.hibernate.boot.registry.classloading.internal.ClassLoaderServiceImpl.classForName(ClassLoaderServiceImpl.java:134)
+	at org.hibernate.boot.registry.selector.internal.StrategySelectorImpl.selectStrategyImplementor(StrategySelectorImpl.java:129)
+	... 133 common frames omitted
+Caused by: java.lang.ClassNotFoundException: Could not load requested class : com.havaz.transport.api.config.MySQLHavazDialect
+	at org.hibernate.boot.registry.classloading.internal.AggregatedClassLoader.findClass(AggregatedClassLoader.java:210)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:348)
+	at org.hibernate.boot.registry.classloading.internal.ClassLoaderServiceImpl.classForName(ClassLoaderServiceImpl.java:131)
+	... 134 common frames omitted
+

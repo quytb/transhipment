@@ -1,0 +1,6 @@
+rootProject.name = 'transport'
+include 'transport-api'
+include 'transport-dao'
+include 'transport-batch'
+include 'transport-core'
+

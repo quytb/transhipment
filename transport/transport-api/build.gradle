@@ -1,0 +1,77 @@
+buildscript {
+    ext {
+        springBootVersion = '2.2.1.RELEASE'
+        apacheCommonsPoolVersion = '2.7.0'
+        jjwtVersion = '0.10.7'
+        mqttClientVersion = '1.2.2'
+    }
+    repositories {
+        mavenLocal()
+        jcenter()
+        mavenCentral()
+    }
+}
+
+plugins {
+    id "org.springframework.boot" version "2.2.1.RELEASE"
+    id "io.spring.dependency-management" version "1.0.8.RELEASE"
+}
+
+jar {
+    archivesBaseName = 'transport-api'
+}
+
+dependencies {
+    implementation("org.springframework.boot:spring-boot-starter")
+    implementation("org.springframework.boot:spring-boot-starter-web") {
+        exclude group: 'org.hibernate.validator', module: 'hibernate-validator'
+    }
+    implementation("org.springframework.boot:spring-boot-starter-security")
+    implementation("org.springframework.boot:spring-boot-starter-websocket")
+    implementation("org.springframework.boot:spring-boot-starter-amqp")
+
+    /* Redis */
+    implementation("org.springframework.boot:spring-boot-starter-data-redis")
+    implementation("io.lettuce:lettuce-core")
+    /* Apache Commons Pool */
+    implementation("org.apache.commons:commons-pool2:${apacheCommonsPoolVersion}")
+
+    /* Swagger */
+    implementation("io.springfox:springfox-swagger2:${swaggerVersion}") {
+        exclude group: 'io.swagger', module: 'swagger-annotations'
+        exclude group: 'io.swagger', module: 'swagger-models'
+    }
+    implementation("io.swagger:swagger-annotations:${swaggerCoreVersion}")
+    implementation("io.swagger:swagger-models:${swaggerCoreVersion}")
+    implementation("io.springfox:springfox-swagger-ui:${swaggerVersion}")
+
+    /* JJWT */
+    implementation("io.jsonwebtoken:jjwt-api:${jjwtVersion}")
+    runtime("io.jsonwebtoken:jjwt-impl:${jjwtVersion}")
+    runtime("io.jsonwebtoken:jjwt-jackson:${jjwtVersion}")
+
+    /* Apache Poi */
+    implementation("org.apache.poi:poi-ooxml:${apachePoiVersion}")
+    implementation("org.apache.poi:poi:${apachePoiVersion}")
+
+    /* Mqtt Client */
+    implementation("org.eclipse.paho:org.eclipse.paho.client.mqttv3:${mqttClientVersion}")
+
+    implementation project(':transport-core')
+    implementation project(':transport-dao')
+
+    implementation("commons-codec:commons-codec")
+
+    implementation 'org.jsoup:jsoup:1.12.1'
+    implementation 'com.squareup.okhttp3:okhttp:3.9.0'
+    implementation 'com.squareup.okio:okio:1.12.0'
+    implementation 'com.googlecode.json-simple:json-simple:1.1.1'
+    implementation 'com.google.api-client:google-api-client:1.23.0'
+
+    testImplementation("org.springframework.boot:spring-boot-starter-test")
+}
+
+bootJar {
+    launchScript()
+}
+

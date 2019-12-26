@@ -1,0 +1,92 @@
+server:
+  port: ${SERVER_PORT}
+  servlet:
+    context-path: ${SERVER_SERVLET_CONTEXT_PATH}
+
+logging:
+  level:
+    org:
+      hibernate:
+        SQL: DEBUG
+      springframework:
+        web: INFO
+    com.havaz: DEBUG
+  file.path: ${LOGGING_FILE_PATH}
+
+spring:
+  datasource:
+    url: ${SPRING_DATASOURCE_URL}
+    username: ${SPRING_DATASOURCE_USERNAME}
+    password: ${SPRING_DATASOURCE_PASSWORD}
+    hikari:
+      connection-timeout: ${SPRING_DATASOURCE_HIKARI_CONNECTION_TIMEOUT}
+      maximum-pool-size: ${SPRING_DATASOURCE_HIKARI_MAXIMUM_POOL_SIZE}
+      minimum-idle: ${SPRING_DATASOURCE_HIKARI_MINIMUM_IDLE}
+      idle-timeout: ${SPRING_DATASOURCE_HIKARI_IDLE_TIMEOUT}
+      max-lifetime: ${SPRING_DATASOURCE_HIKARI_MAX_LIFETIME}
+  jpa:
+    properties:
+      hibernate:
+        format_sql: ${SPRING_JPA_PROPERTIES_HIBERNATE_FORMAT_SQL}
+  redis:
+    host: ${SPRING_REDIS_HOST}
+    port: ${SPRING_REDIS_PORT}
+    password: ${SPRING_REDIS_PASSWORD}
+
+# Havaz
+havaz:
+  security:
+    jwt-secret-key: ${HAVAZ_SECURITY_JWT_SECRET_KEY}
+  mqtt:
+    url: ${HAVAZ_MQTT_URL}
+    username: ${HAVAZ_MQTT_USERNAME}
+    password: ${HAVAZ_MQTT_PASSWORD}
+    queue:
+      tracking-driver: ${HAVAZ_MQTT_QUEUE_TRACKING_DRIVER}
+  redis:
+    key: ${HAVAZ_REDIS_KEY}
+    pubsub:
+      channel: ${HAVAZ_REDIS_PUBSUB_CHANNEL}
+  rabbitmq:
+    san:
+      host: ${HAVAZ_RABBITMQ_SAN_HOST}
+      port: ${HAVAZ_RABBITMQ_SAN_PORT}
+      username: ${HAVAZ_RABBITMQ_SAN_USERNAME}
+      password: ${HAVAZ_RABBITMQ_SAN_PASSWORD}
+      virtual-host: ${HAVAZ_RABBITMQ_SAN_VIRTUAL_HOST}
+      on-send-message: ${HAVAZ_RABBITMQ_SAN_ON_SEND_MESSAGE}
+      exchange: ${HAVAZ_RABBITMQ_SAN_EXCHANGE}
+      routing-key: ${HAVAZ_RABBITMQ_SAN_ROUTING_KEY}
+      driver.arrived:
+        queue: ${HAVAZ_RABBITMQ_SAN_DRIVER_ARRIVED_QUEUE}
+        routing-key: ${HAVAZ_RABBITMQ_SAN_DRIVER_ARRIVED_ROUTING_KEY}
+      driver.confirmed:
+        queue: ${HAVAZ_RABBITMQ_SAN_DRIVER_CONFIRMED_QUEUE}
+        routing-key: ${HAVAZ_RABBITMQ_SAN_DRIVER_CONFIRMED_ROUTING_KEY}
+    erp:
+      host: ${HAVAZ_RABBITMQ_ERP_HOST}
+      port: ${HAVAZ_RABBITMQ_ERP_PORT}
+      username: ${HAVAZ_RABBITMQ_ERP_USERNAME}
+      password: ${HAVAZ_RABBITMQ_ERP_PASSWORD}
+      virtual-host: ${HAVAZ_RABBITMQ_ERP_VIRTUAL_HOST}
+      queue:
+        transfer-ticket: ${HAVAZ_RABBITMQ_ERP_QUEUE_TRANSFER_TICKET}
+        transfer-ticket-sync: ${HAVAZ_RABBITMQ_ERP_QUEUE_TRANSFER_TICKET_SYNC}
+    transport.transferticket:
+      exchange: ${HAVAZ_RABBITMQ_TRANSPORT_TRANSFERTICKET_EXCHANGE}
+      routing-key: ${HAVAZ_RABBITMQ_TRANSPORT_TRANSFERTICKET_ROUTING_KEY}
+      queue: ${HAVAZ_RABBITMQ_TRANSPORT_TRANSFERTICKET_QUEUE}
+  stomp:
+    topic: ${HAVAZ_STOMP_TOPIC}
+  firebase:
+    cmd.havaznow.topic: ${HAVAZ_FIREBASE_CMD_HAVAZNOW_TOPIC}
+  sms:
+    hotlines: ${HAVAZ_SMS_HOTLINES}
+    time-delay: ${HAVAZ_TIME_DELAY}
+    number-driver-limit: ${HAVAZ_NUMBER_DRIVER_LIMIT}
+    number-minute-limit: ${HAVAZ_NUMBER_MINUTE_LIMIT}
+    url-erp: ${HAVAZ_URL_ERP}
+    url-san: ${HAVAZ_URL_SAN}
+    url-monitor-transfer-ticket: ${HAVAZ_URL_MONITOR_TRANSFER_TICKET}
+    url-erp-token: ${HAVAZ_URL_ERP_TOKEN}
+

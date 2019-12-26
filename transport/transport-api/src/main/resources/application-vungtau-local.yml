@@ -1,0 +1,72 @@
+spring:
+  datasource:
+    url: "jdbc:mysql://103.141.140.12:3306/db_phatlocan?useLegacyDatetimeCode=false&serverTimezone=GMT%2B7&useUnicode=true&characterEncoding=utf8"
+    username: "sql_trung_chuyen_phatlocan"
+    password: "Sqltrungchuyen@123"
+    hikari:
+      connection-timeout: 30000 # 30 seconds
+      maximum-pool-size: 50
+      minimum-idle: 5
+      idle-timeout: 120000 # 2 minutes
+      max-lifetime: 1800000 # 30 minutes
+  redis:
+    host: "3.1.31.233"
+    port: 6379
+    password: "HavzReeedisjYR8r25tyZ2011"
+
+# Havaz
+havaz:
+  security:
+    jwt-secret-key: "05d52bc14d810fedeb4a81965258ce638028116c06d408e3b5d19867b35ea95819dc4e8e884d330a6e98e2607fb098cf630c1441665528113e84e75148962d72"
+  mqtt:
+    url: "wss://emqx.havazdev.net:8087"
+    username: "mqtt"
+    password: "HazClients@123"
+    queue:
+      tracking-driver: "VungTau_queue_driver"
+  redis:
+    key: "PHATLOCAN_KEY"
+    pubsub:
+      channel: "notify_to_manager_vungtau_dev"
+  rabbitmq:
+    san:
+      host: "202.134.19.11"
+      port: 5672
+      username: "shavaz"
+      password: "HazavSA12B4nvE@2020"
+      virtual-host: "/"
+      on-send-message: true
+      exchange: "transport.tracking"
+      routing-key: "transport.tracking.updatepickuptime"
+      driver.arrived:
+        queue: "transport.tracking.driver"
+        routing-key: "transport.tracking.driver.has.arrived"
+      driver.confirmed:
+        queue: "transport.rabbitmq.driver.confirmed"
+        routing-key: "transport.rabbitmq.driver.confirmed.routing"
+    erp:
+      host: "103.141.140.12"
+      port: 5672
+      username: "erp"
+      password: "havaz@erp"
+      virtual-host: "vungtau"
+      queue:
+        transfer-ticket: "3-queue-transshipments-ticket"
+        transfer-ticket-sync: "3-sync-queue-transshipments-ticket"
+    transport.transferticket:
+      exchange: "3-transshipments-ticket"
+      routing-key: "transport.transferticket.update"
+      queue: "3-queue-update-ticket"
+  stomp:
+    topic: "/topic/noti"
+  firebase:
+    cmd.havaznow.topic: "/topics/cmdhavaz-now-" # firebase-appTopic
+  sms:
+    hotlines: ""
+  time-delay: 5
+  number-driver-limit: 2
+  number-minute-limit: 60000
+  url-erp: "https://dev.vungtau.havaz.vn/api/transshipment/"
+  url-san: "http://dev.api.havaz.vn"
+  url-monitor-transfer-ticket: "https://dev.admin.vungtau.havaz.vn/cron/"
+  url-erp-token: "664a5c3dddff20de79e38111025c01f3"

@@ -1,0 +1,61 @@
+ext {
+    springBootVersion = '2.2.1.RELEASE'
+    lombokVersion = '1.18.10'
+    mockitoVersion  = '2.22.0'
+    swaggerCoreVersion = '1.5.24'
+    swaggerVersion = '2.9.2'
+    apachePoiVersion = '4.1.1'
+    sentryLockbackVersion = '1.7.28'
+}
+
+allprojects {
+
+    apply plugin: 'idea'
+    apply plugin: 'eclipse'
+
+    description = 'Havaz Transport System'
+
+    group = 'com.havaz'
+
+    repositories {
+        mavenLocal()
+        jcenter()
+        mavenCentral()
+    }
+}
+
+subprojects() {
+    apply plugin: 'java'
+    apply plugin: 'java-library'
+    apply plugin: 'idea'
+    apply plugin: 'eclipse'
+
+    sourceCompatibility = JavaVersion.VERSION_1_8
+    targetCompatibility = JavaVersion.VERSION_1_8
+
+    compileJava.options.encoding = "UTF-8"
+    compileTestJava.options.encoding = "UTF-8"
+
+    configurations {
+        developmentOnly
+        runtimeClasspath {
+            extendsFrom developmentOnly
+        }
+    }
+
+    dependencies() {
+        api('org.springframework.boot:spring-boot-starter')
+        developmentOnly("org.springframework.boot:spring-boot-devtools")
+
+        compileOnly("org.projectlombok:lombok:${lombokVersion}")
+        annotationProcessor("org.projectlombok:lombok:${lombokVersion}")
+
+        testImplementation('org.springframework.boot:spring-boot-starter-test')
+        testImplementation("junit:junit")
+    }
+}
+
+wrapper {
+    gradleVersion = '5.6.4'
+    distributionType = Wrapper.DistributionType.ALL
+}

@@ -1,0 +1,9 @@
+stages:
+- build
+
+docker-build:
+  stage: build
+  script:
+  - docker build -t havaz_tt . 
+  - docker rm -f havaz_tt
+  - docker run -d --name havaz_tt -p 8890:8080 havaz_tt

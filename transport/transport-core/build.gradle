@@ -1,0 +1,41 @@
+buildscript {
+    ext {
+        googleGuavaVersion = '28.1-jre'
+    }
+
+    repositories {
+        mavenLocal()
+        jcenter()
+        mavenCentral()
+    }
+}
+
+plugins {
+    id "io.spring.dependency-management" version "1.0.8.RELEASE"
+}
+
+jar {
+    archivesBaseName = 'transport-core'
+}
+
+dependencies {
+    api("io.sentry:sentry-logback:${sentryLockbackVersion}")
+
+    api("com.google.guava:guava:${googleGuavaVersion}")
+
+    api("org.apache.commons:commons-lang3")
+
+    /* Jackson */
+    api("com.fasterxml.jackson.core:jackson-databind")
+    api("com.fasterxml.jackson.core:jackson-annotations")
+    api("com.fasterxml.jackson.core:jackson-core")
+    api("com.fasterxml.jackson.datatype:jackson-datatype-jdk8")
+    api("com.fasterxml.jackson.datatype:jackson-datatype-jsr310")
+
+    /* Hibernate Validator */
+    api("org.hibernate.validator:hibernate-validator")
+}
+
+dependencyManagement {
+    imports { mavenBom("org.springframework.boot:spring-boot-dependencies:${springBootVersion}") }
+}

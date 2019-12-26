@@ -1,0 +1,45 @@
+logging:
+  level:
+    org:
+      hibernate:
+        SQL: DEBUG
+      springframework:
+        web: INFO
+    com.havaz: DEBUG
+  file.path: ${LOGGING_FILE_PATH}
+
+spring:
+  datasource:
+    url: ${SPRING_DATASOURCE_URL}
+    username: ${SPRING_DATASOURCE_USERNAME}
+    password: ${SPRING_DATASOURCE_PASSWORD}
+    hikari:
+      connection-timeout: ${SPRING_DATASOURCE_HIKARI_CONNECTION_TIMEOUT}
+      maximum-pool-size: ${SPRING_DATASOURCE_HIKARI_MAXIMUM_POOL_SIZE}
+      minimum-idle: ${SPRING_DATASOURCE_HIKARI_MINIMUM_IDLE}
+      idle-timeout: ${SPRING_DATASOURCE_HIKARI_IDLE_TIMEOUT}
+      max-lifetime: ${SPRING_DATASOURCE_HIKARI_MAX_LIFETIME}
+  jpa:
+    properties:
+      hibernate:
+        format_sql: ${SPRING_JPA_PROPERTIES_HIBERNATE_FORMAT_SQL}
+  quartz:
+    job-store-type: memory
+    properties:
+      org:
+        quartz:
+          scheduler:
+            instanceName: HAVAZ_TRANSPORT_BATCH
+          threadPool:
+            threadCount: ${SPRING_QUARTZ_PROPERTIES_THREADPOOL_THREADCOUNT}
+            class: org.quartz.simpl.SimpleThreadPool
+
+# Havaz
+havaz:
+  sms:
+    hotlines: ${HAVAZ_SMS_HOTLINES}
+  quartz:
+    cron-expression:
+      monitor-transfer-ticket: ${HAVAZ_QUARTZ_CRON_EXPRESSION_MONITOR_TRANSFER_TICKET}
+  url-monitor-transfer-ticket: ${HAVAZ_URL_MONITOR_TRANSFER_TICKET}
+  url-erp-token: ${HAVAZ_URL_ERP_TOKEN}
