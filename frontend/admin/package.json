@@ -31,7 +31,7 @@
     "jquery": "^3.4.1",
     "jwt-decode": "^2.2.0",
     "leaflet": "^1.5.1",
-    "moment": "^2.24.0",
+    "moment": "^2.29.4",
     "perfect-scrollbar": "0.7.1",
     "popper.js": "^1.15.0",
     "redis": "^2.8.0",
